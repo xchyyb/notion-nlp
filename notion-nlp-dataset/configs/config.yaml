@@ -4,7 +4,7 @@ tasks :  # task list
     name : Thinking past year # Custom name for differentiation of output file
     description : Thinking in the past year from the Memo database # Description of the current task, used to record what the task is to do
     visual:
-      font_show: "xxx.ttf"  # Your font file name, endswith ttf or otf
+      font_show: "张维镜手写楷书.ttf"  # Your font file name, endswith ttf or otf
       colormap: "random"  # colormap type
     nlp:
       seg_pkg : "jieba"  # segmentation package
@@ -18,16 +18,16 @@ tasks :  # task list
           - 999
     api:
       notion: # notion API info
-        token : 'here is your own notion intergration token'  # Obtain your own token from notion intergration: https://www.notion.so/my-integrations/
-        database_id : 'here is your database id for analysis' # database id
+        token : 'secret_s3RumixEHhiMIA2S4UJb0eusfzbha9RKn6ftkzXjDxK'  # Obtain your own token from notion intergration: https://www.notion.so/my-integrations/
+        database_id : 'ad61a6ac921043dfaf36d8f7f4f9666e' # database id
         extra : # Options for filtering and sorting the database
           filter :
             property : Tags
             multi_select :
-              contains : thinking
+              contains : 
   - # Completing the simplest task configuration required to run computes all the text of the database
     name : simplest task # Custom name for differentiation of output file
     api:
       notion: # notion API info
-        token : 'here is your own notion intergration token'  # Obtain your own token from notion intergration: https://www.notion.so/my-integrations/
-        database_id : 'here is your database id for analysis' # database id
+        token : 'secret_s3RumixEHhiMIA2S4UJb0eusfzbha9RKn6ftkzXjDxK'  # Obtain your own token from notion intergration: https://www.notion.so/my-integrations/
+        database_id : 'ad61a6ac921043dfaf36d8f7f4f9666e' # database id
